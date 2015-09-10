@@ -48,7 +48,7 @@
  *  run vmstat and monitor the context-switches (cs) field)
  */
 unsigned int sysctl_sched_latency =200000ULL;
-unsigned int normalized_sysctl_sched_latency = 75500000ULL;
+unsigned int normalized_sysctl_sched_latency = 7550000ULL;
 
 /*
  * The initial- and re-scaling of tunables is configurable
@@ -72,7 +72,7 @@ unsigned int normalized_sysctl_sched_min_granularity = 200000ULL;
 /*
  * is kept at sysctl_sched_latency / sysctl_sched_min_granularity
  */
-static unsigned int sched_nr_latency = 20;
+static unsigned int sched_nr_latency = 13;
 
 /*
  * After fork, child runs first. If set to 0 (default) then
@@ -91,7 +91,7 @@ unsigned int sysctl_sched_child_runs_first __read_mostly;
 unsigned int sysctl_sched_wakeup_granularity = 0UL;
 unsigned int normalized_sysctl_sched_wakeup_granularity = 80000UL;
 
-const_debug unsigned int sysctl_sched_migration_cost = 695UL;
+const_debug unsigned int sysctl_sched_migration_cost = 695000UL;
 
 /*
  * The exponential sliding  window over which load is averaged for shares
