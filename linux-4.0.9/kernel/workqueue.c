@@ -86,7 +86,7 @@ enum {
 	UNBOUND_POOL_HASH_ORDER	= 6,		/* hashed by pool->attrs */
 	BUSY_WORKER_HASH_ORDER	= 6,		/* 64 pointers */
 
-	MAX_IDLE_WORKERS_RATIO	= 2,		/* 1/4 of busy can be idle */
+	MAX_IDLE_WORKERS_RATIO	= 6,		/* 1/4 of busy can be idle */
 	IDLE_WORKER_TIMEOUT	= 100 * HZ,	/* keep idle ones for 5 mins */
 
 	MAYDAY_INITIAL_TIMEOUT  = HZ / 100 >= 2 ? HZ / 100 : 2,
