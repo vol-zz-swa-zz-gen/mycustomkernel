@@ -24,9 +24,9 @@
 #define THROTL_IOPS_MAX		UINT_MAX
 
 /* CFQ specific, out here for blkcg->cfq_weight */
-#define CFQ_WEIGHT_MIN		10
+#define CFQ_WEIGHT_MIN		200
 #define CFQ_WEIGHT_MAX		1000
-#define CFQ_WEIGHT_DEFAULT	500
+#define CFQ_WEIGHT_DEFAULT	700
 
 #ifdef CONFIG_BLK_CGROUP
 
