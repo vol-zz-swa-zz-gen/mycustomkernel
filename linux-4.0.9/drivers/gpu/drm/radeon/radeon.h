@@ -116,7 +116,7 @@ extern int radeon_backlight;
  * Copy from radeon_drv.h so we don't have to include both and have conflicting
  * symbol;
  */
-#define RADEON_MAX_USEC_TIMEOUT			3000	/* 100 ms */
+#define RADEON_MAX_USEC_TIMEOUT			60000	/* 100 ms */
 #define RADEON_FENCE_JIFFIES_TIMEOUT		(HZ / 5)
 /* RADEON_IB_POOL_SIZE must be a power of 2 */
 #define RADEON_IB_POOL_SIZE			32
